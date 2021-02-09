@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
+import { HttpModule, HttpService, Module } from '@nestjs/common';
 import { userGithubService } from './userGithub.service';
 
 @Module({
-  imports: [],
-  providers: [userGithubService],
-  exports: [userGithubService]
+  imports: [ HttpModule ],
+  providers: [ userGithubService ],
+  exports: [ userGithubService ]
 })
 export class UserGithubServiceModule { }

@@ -7,8 +7,7 @@ import { GraphQLConfig } from './config';
 @Module({
   imports: [
     ResolversModule,
-    HttpModule,
-        HttpService,
+    HttpModule.register( {timeout: 18000 } ),
     GraphQLModule.forRootAsync({
       useClass: GraphQLConfig,
     }),

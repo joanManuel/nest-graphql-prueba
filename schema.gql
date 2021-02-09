@@ -1,39 +1,107 @@
-type Query {
-    "Lista de los estudiantes de la academia"
-    allUser:[cuentas]
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Representa una cuenta de github"""
+type UserGithub {
+  """Login"""
+  login: String
+
+  """Código del producto"""
+  id: Float
+
+  """Subtipo del producto"""
+  node_id: String
+
+  """Subcódigo del producto"""
+  avatar_url: String
+
+  """Subcódigo del producto"""
+  gravatar_id: String
+
+  """Subcódigo del producto"""
+  url: String
+
+  """Subcódigo del producto"""
+  html_url: String
+
+  """Subcódigo del producto"""
+  followers_url: String
+
+  """Subcódigo del producto"""
+  following_url: String
+
+  """Subcódigo del producto"""
+  gists_url: String
+
+  """Subcódigo del producto"""
+  starred_url: String
+
+  """Subcódigo del producto"""
+  subscriptions_url: String
+
+  """Subcódigo del producto"""
+  organizations_url: String
+
+  """Subcódigo del producto"""
+  repos_url: String
+
+  """Subcódigo del producto"""
+  events_url: String
+
+  """Subcódigo del producto"""
+  received_events_url: String
+
+  """Subcódigo del producto"""
+  type: String
+
+  """Subcódigo del producto"""
+  site_admin: Boolean
+
+  """Subcódigo del producto"""
+  name: String
+
+  """Subcódigo del producto"""
+  company: String
+
+  """Subcódigo del producto"""
+  blog: String
+
+  """Subcódigo del producto"""
+  location: String
+
+  """Subcódigo del producto"""
+  email: String
+
+  """Subcódigo del producto"""
+  hireable: String
+
+  """Subcódigo del producto"""
+  bio: String
+
+  """Subcódigo del producto"""
+  twitter_username: String
+
+  """Subcódigo del producto"""
+  public_repos: Float
+
+  """Subcódigo del producto"""
+  public_gists: Float
+
+  """Subcódigo del producto"""
+  followers: Float
+
+  """Subcódigo del producto"""
+  following: Float
+
+  """Subcódigo del producto"""
+  created_at: String
+
+  """Subcódigo del producto"""
+  updated_at: String
 }
-"Información de los estudiantes"
-input cuentas {
-        login: String
-        id: number
-        node_id: String
-        avatar_url: String
-        gravatar_id: String
-        url: String
-        html_url: String
-        followers_url: String
-        following_url: String
-        gists_url: String
-        starred_url: String
-        subscriptions_url: String
-        organizations_url: String
-        repos_url: String
-        events_url: String
-        received_events_url: String
-        type: String
-        site_admin: boolean
-        name: String
-        company: String
-        blog: String
-        location: String
-        email: String
-        hireable: String
-        bio: String
-        twitter_username: String
-        public_repos: Int
-        public_gists: Int
-        followers: Int
-        following: Int
-        created_at: String
-        updated_at: String
+
+type Query {
+  """Retorna las cuentas de un cliente"""
+  allUser: [UserGithub!]!
 }
