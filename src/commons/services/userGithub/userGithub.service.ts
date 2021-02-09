@@ -8,7 +8,7 @@ export class userGithubService {
     constructor(private readonly httpService: HttpService){}
     
     public getUser() {
-        return this.httpService.get<IUserGithubs>(`https://api.github.com/users/joanManuel`)
+        return this.httpService.get<IUserGithubs>(`https://api.github.com/users`)
         .pipe(
             map((resp: AxiosResponse<IUserGithubs>) => resp.data.usuarios.map((account) => UserGithub.create(account)))
         );

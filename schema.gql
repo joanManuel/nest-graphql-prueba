@@ -57,48 +57,6 @@ type UserGithub {
 
   """Subcódigo del producto"""
   site_admin: Boolean
-
-  """Subcódigo del producto"""
-  name: String
-
-  """Subcódigo del producto"""
-  company: String
-
-  """Subcódigo del producto"""
-  blog: String
-
-  """Subcódigo del producto"""
-  location: String
-
-  """Subcódigo del producto"""
-  email: String
-
-  """Subcódigo del producto"""
-  hireable: String
-
-  """Subcódigo del producto"""
-  bio: String
-
-  """Subcódigo del producto"""
-  twitter_username: String
-
-  """Subcódigo del producto"""
-  public_repos: Float
-
-  """Subcódigo del producto"""
-  public_gists: Float
-
-  """Subcódigo del producto"""
-  followers: Float
-
-  """Subcódigo del producto"""
-  following: Float
-
-  """Subcódigo del producto"""
-  created_at: String
-
-  """Subcódigo del producto"""
-  updated_at: String
 }
 
 type Query {
