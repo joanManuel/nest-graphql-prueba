@@ -97,7 +97,3 @@ export interface IUserGithub {
         site_admin: boolean
 }
 
-export interface IUserGithubs {
-        usuarios: IUserGithub[];
-}
-      

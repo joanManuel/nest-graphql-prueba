@@ -60,6 +60,6 @@ type UserGithub {
 }
 
 type Query {
-  """Retorna las cuentas de un cliente"""
+  """Retorna todos los usuarios"""
   allUser: [UserGithub!]!
 }
