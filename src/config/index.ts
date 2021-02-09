@@ -1,0 +1,1 @@
+export {GraphQLConfig} from './graphql.config'
